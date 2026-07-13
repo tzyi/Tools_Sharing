@@ -1,7 +1,7 @@
 import type { ComponentType, LazyExoticComponent } from 'react'
 import { lazy } from 'react'
 import type { LucideIcon } from 'lucide-react'
-import { Languages, Ruler } from 'lucide-react'
+import { Dices, Languages } from 'lucide-react'
 
 export interface ToolMeta {
   slug: string
@@ -26,14 +26,14 @@ export const tools: ToolMeta[] = [
     Component: lazy(() => import('@/tools/zh-converter/ZhConverter')),
   },
   {
-    slug: 'unit-converter',
-    name: '單位轉換器',
-    description: '長度、重量、溫度等單位互相轉換',
-    icon: Ruler,
-    iconBg: 'bg-violet-100',
-    iconColor: 'text-violet-600',
-    category: '轉換工具',
-    Component: lazy(() => import('@/tools/unit-converter/UnitConverter')),
+    slug: 'dice-roller',
+    name: '擲骰子',
+    description: '選擇 1–5 顆骰子，享受滾動動畫並揭曉點數結果',
+    icon: Dices,
+    iconBg: 'bg-emerald-100',
+    iconColor: 'text-emerald-600',
+    category: '趣味工具',
+    Component: lazy(() => import('@/tools/dice-roller/DiceRoller')),
   },
 ]
 
