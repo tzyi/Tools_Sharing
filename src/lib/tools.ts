@@ -1,7 +1,7 @@
 import type { ComponentType, LazyExoticComponent } from 'react'
 import { lazy } from 'react'
 import type { LucideIcon } from 'lucide-react'
-import { FileText, Ruler } from 'lucide-react'
+import { Languages, Ruler } from 'lucide-react'
 
 export interface ToolMeta {
   slug: string
@@ -16,14 +16,14 @@ export interface ToolMeta {
 
 export const tools: ToolMeta[] = [
   {
-    slug: 'word-counter',
-    name: '文字字數統計',
-    description: '即時計算字數、字元數與段落數',
-    icon: FileText,
+    slug: 'zh-converter',
+    name: '簡繁中文轉換',
+    description: '簡體與繁體中文即時互相轉換，雙欄對照顯示',
+    icon: Languages,
     iconBg: 'bg-sky-100',
     iconColor: 'text-sky-600',
     category: '文字工具',
-    Component: lazy(() => import('@/tools/word-counter/WordCounter')),
+    Component: lazy(() => import('@/tools/zh-converter/ZhConverter')),
   },
   {
     slug: 'unit-converter',

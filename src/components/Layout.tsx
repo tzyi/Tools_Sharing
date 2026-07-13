@@ -32,7 +32,9 @@ export default function Layout() {
       </header>
 
       <main className="flex-1">
-        <Outlet />
+        <div className="mx-auto max-w-6xl px-6 py-8">
+          <Outlet />
+        </div>
       </main>
 
       <footer className="border-t py-6 text-center text-sm text-muted-foreground">
