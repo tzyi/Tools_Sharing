@@ -1,6 +1,9 @@
 # 小工具集合網站
 
-React + TypeScript + Vite + shadcn/ui 打造的線上小工具集合，仿照 [tool.lifehacker.tw](https://tool.lifehacker.tw/) 的概念。
+React + TypeScript + Vite + shadcn/ui 打造的線上小工具集合
+🎉 網站已上線：https://tools-sharing.cabie8399.workers.dev
+
+![](./img/main.png)
 
 ## 開發
 
